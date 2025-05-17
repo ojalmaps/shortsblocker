@@ -2,7 +2,7 @@
 
 To use this web extension
 
-In Edge & Chrome: 
+0. Navigate to Edge or Chrome. 
 1. Click on the 3 dot menu in the top right corner of the page.
 2. Find the Extensions tab
 3. On the page find the toggle to allow Developer mode
