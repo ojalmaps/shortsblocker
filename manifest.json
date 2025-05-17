@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "No YouTube Shorts - Motivational Quotes",
+  "version": "1.0",
+  "description": "Blocks YouTube Shorts and displays a motivational quote instead.",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess", "tabs"],
+  "host_permissions": ["*://www.youtube.com/shorts/*", "*://youtube.com/shorts/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "quote.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block-shorts",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*", "*://youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

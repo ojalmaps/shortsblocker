@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/quote.html" }
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/shorts/",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/quote.html" }
+    },
+    "condition": {
+      "urlFilter": "||www.youtube.com/shorts/",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

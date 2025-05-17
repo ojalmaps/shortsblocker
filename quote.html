@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay Motivated!</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #9310e5e1 0%, #3ac4ff 100%);
+      font-family: "Lucida Handwriting", Lucida, cursive;
+      margin: 0;
+    }
+    .quote {
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+      font-size: 1.5rem;
+      color: #333;
+      text-align: center;
+      max-width: 500px;
+    }
+    .author {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    .refresh {
+      margin-top: 2rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background: #43c6ac;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .refresh:hover {
+      background: #34a69a;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote" id="quote"></div>
+  <div class="author" id="author"></div>
+  <script src="quote.js"></script>
+</body>
+</html>
